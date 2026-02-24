@@ -1,0 +1,19 @@
+Why attention_mask is necessary
+attention_mask is required in Transformer models to handle padded sequences in a batch. It is a binary tensor where real tokens are marked as 1 and padding tokens as 0. During self-attention, this mask prevents the model from attending to padding tokens by setting their attention scores to a large negative value before the softmax, ensuring that only meaningful tokens contribute to the output representations. This allows the model to generate correct, context-aware embeddings.
+
+Shape explanation of hidden states
+batch_size=Number of sentences processed together
+sequence_length=No. of tokens in the sentence
+hidden_size= Size of each token vector
+
+
+Shape explanation of attention tensor
+batch_size=Number of sentences processed together
+num_heads=Number of heads
+seq_len=Length of Query Sequence 
+seq_len=Length of Key Sequence 
+
+What changes across layers
+Across layers, the token representations gradually learn more context. In layer 0, the embeddings contain only the basic token meaning and positional information. In middle layers, the model starts incorporating information from nearby tokens. By the final layer, each token’s representation fully captures the meaning in the context of the entire sentence.
+
+
