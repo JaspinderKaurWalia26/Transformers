@@ -1,0 +1,11 @@
+Written explanation:
+
+Question: Why static embeddings fail?
+Answer: Static embeddings fails because they assign one fixed vector representation to each word, regardless of the context in which the word appears.
+
+Question: How attention works?
+Answer: Self-attention works by computing similarity between tokens using Query, Key, and Value vectors, assigning importance through softmax, and creating context-aware representations by combining relevant information from all tokens in the sentence.
+
+
+Question: Difference between encoder and decoder?
+Answer: The encoder reads the entire input sentence and understands its meaning using bidirectional self-attention, which allows it to see both past and future words. The decoder generates the output sentence word by word using masked self-attention, so it can only see previously generated words and not future ones. The encoder is used for understanding tasks, while the decoder is used for text generation.
