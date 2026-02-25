@@ -1,0 +1,11 @@
+What fine-tuning changes?
+Fine-tuning changes the pretrained model by slightly adjusting its existing weights and fully training a new task-specific head, so the model can learn patterns relevant to the specific task.
+
+Why learning rate is small?
+The learning rate is kept small so that the model learns gradually, updating its weights slowly without forgetting the knowledge it already gained during pretraining.
+
+Signs of overfitting in transformer training
+1.If training accuracy is more than validation accuracy, then there is a sign of overfitting
+2.If training loss decreases gradually but validation loss either gets struck or increases then its a sign of overfitting
+
+
