@@ -8,4 +8,9 @@ Signs of overfitting in transformer training
 1.If training accuracy is more than validation accuracy, then there is a sign of overfitting
 2.If training loss decreases gradually but validation loss either gets struck or increases then its a sign of overfitting
 
-
+Comparing Classical NLP vs transformer
+Accuracy: Achieved 0.94 accuracy during fine tuning bert model on ag news dataset while in Classical NLP achieved the accuracy of 1 when trained on resume dataset using logistic regression algorithm.
+F1 Score:Achieved 0.94 F1-score during fine tuning bert model on ag news dataset while in Classical NLP achieved the F1-score of 1 when trained on resume dataset using logistic regression algorithm.
+Training time: Classical NLP trains very fast (few minutes on CPU), while Transformers take much longer (minutes to hours, usually need GPU).
+Inference latency: Classical NLP makes predictions very quickly, but Transformers take more time per input due to their complex layers.
+Model Size: Classical NLP models are small, while Transformers are large and require more memory and storage.
