@@ -1,0 +1,9 @@
+Implemented LoRA on DistilBERT 
+
+Trainable parameter count: trainable params: 741,124 || all params: 67,697,672 || trainable%: 1.0948
+Training time: Approx 32 minutes for 2 Epochs 
+Accuracy difference: When Implemented LoRA on DistilBERT achieved 0.943 accuracy and when full fine tuning was done on Bert model achieved 0.949 accuracy
+
+
+Why PEFT is important in production?
+PEFT is important in production because systems usually handle multiple tasks. Full fine-tuning requires training and storing a separate large model for each task, which consumes more memory, time, and storage. PEFT fine-tunes only a small number of parameters, making training faster and memory-efficient.
